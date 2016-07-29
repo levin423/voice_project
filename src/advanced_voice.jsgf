@@ -1,0 +1,12 @@
+#JSGF V1.0;
+grammar advanced_command;
+public <cmd> = STOP | CONTINUE SPEECH | PAUSE SPEECH | <action> | <short_action>;
+<action> = <movement> <limb> <joint> <direction> <speed>;
+<short_action> = <movement> <direction> <speed>;
+<movement> = MOVE | SHIFT;
+<limb> = LEFT | RIGHT;
+<joint> = SHOULDER | ELBOW | WRIST;
+<direction> = LEFT | RIGHT | <dir1> | <dir2>;
+<dir1> = UP | HIGHER;
+<dir2> = DOWN | LOWER;
+<speed> = [FASTER | SLOWER];

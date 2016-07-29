@@ -1,0 +1,79 @@
+Language model created by QuickLM on Tue Jul  5 22:16:08 EDT 2016
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 1 sentences and 15 words
+
+\data\
+ngram 1=15
+ngram 2=21
+ngram 3=20
+
+\1-grams:
+-1.6435 </s> -0.3010
+-1.6435 <s> -0.2374
+-1.6435 CONTINUE -0.2808
+-1.6435 DOWN -0.2374
+-1.6435 IN -0.2374
+-1.6435 LEFT -0.2374
+-0.8653 MOVE -0.2374
+-1.3424 NOW -0.2808
+-1.6435 OUT -0.2910
+-1.6435 PAUSE -0.2808
+-1.6435 RIGHT -0.2374
+-1.3424 SPEECH -0.2808
+-1.6435 START -0.2808
+-1.6435 STOP -0.2808
+-1.6435 UP -0.2374
+
+\2-grams:
+-0.3010 <s> MOVE -0.2632
+-0.3010 CONTINUE SPEECH -0.1761
+-0.3010 DOWN MOVE -0.2632
+-0.3010 IN MOVE -0.2632
+-0.3010 LEFT MOVE -0.2632
+-1.0792 MOVE DOWN 0.0000
+-1.0792 MOVE IN 0.0000
+-1.0792 MOVE LEFT 0.0000
+-1.0792 MOVE OUT 0.0000
+-1.0792 MOVE RIGHT 0.0000
+-1.0792 MOVE UP 0.0000
+-0.6021 NOW CONTINUE 0.0000
+-0.6021 NOW STOP 0.0000
+-0.3010 OUT START 0.0000
+-0.3010 PAUSE SPEECH -0.1761
+-0.3010 RIGHT MOVE -0.2632
+-0.6021 SPEECH </s> -0.3010
+-0.6021 SPEECH PAUSE 0.0000
+-0.3010 START NOW -0.1761
+-0.3010 STOP NOW -0.1761
+-0.3010 UP MOVE -0.2632
+
+\3-grams:
+-0.3010 <s> MOVE LEFT
+-0.3010 CONTINUE SPEECH PAUSE
+-0.3010 DOWN MOVE IN
+-0.3010 IN MOVE OUT
+-0.3010 LEFT MOVE RIGHT
+-0.3010 MOVE DOWN MOVE
+-0.3010 MOVE IN MOVE
+-0.3010 MOVE LEFT MOVE
+-0.3010 MOVE OUT START
+-0.3010 MOVE RIGHT MOVE
+-0.3010 MOVE UP MOVE
+-0.3010 NOW CONTINUE SPEECH
+-0.3010 NOW STOP NOW
+-0.3010 OUT START NOW
+-0.3010 PAUSE SPEECH </s>
+-0.3010 RIGHT MOVE UP
+-0.3010 SPEECH PAUSE SPEECH
+-0.3010 START NOW STOP
+-0.3010 STOP NOW CONTINUE
+-0.3010 UP MOVE DOWN
+
+\end\

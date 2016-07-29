@@ -1,0 +1,9 @@
+<launch> 
+	<node name="basic_recognizer" pkg="pocketsphinx" type="recognizer.py" launch-prefix="$(find voice_control_project)/src/basic_kickstart" >
+    		<param name="fsg" value="$(find voice_control_project)/src/basic_voice.fsg"/>
+    		<param name="dict" value="$(find voice_control_project)/src/basic_voice.dic"/> 
+	</node>
+	<node name="actuator" pkg="pocketsphinx" type="test_actuator.py" output="screen" respawn="true" >
+   	</node>
+</launch>
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+rosservice call --wait /advanced_recognizer/start &
+#xterm -e rostopic echo   /advanced_recognizer/output &
+exec "$@"

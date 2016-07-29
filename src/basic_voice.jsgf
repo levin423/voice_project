@@ -1,0 +1,7 @@
+#JSGF V1.0;
+grammar basic_command;
+public  <basicCmd> = <action> <object>;
+#  public <basicCmd> = <action> <object> <modifier>;
+  <action> =  MOVE | START | STOP | PAUSE | CONTINUE  ;
+  <object> =  LEFT | RIGHT | UP | DOWN | IN | OUT | NOW | SPEECH ; 
+#  <modifier> = [ FAST | SLOW ] ;

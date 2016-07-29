@@ -1,0 +1,7 @@
+
+<launch>
+
+  <node name="actuator" pkg="pocketsphinx" type="test_actuator.py" output="screen" respawn="true">
+  </node>
+
+</launch>
