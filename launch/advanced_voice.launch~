@@ -3,6 +3,6 @@
     <param name="fsg" value="$(find voice_control_project)/src/advanced_voice.fsg"/>
     <param name="dict" value="$(find voice_control_project)/src/advanced_voice.dic"/> 
  </node>
- <node name="actuator" pkg="pocketsphinx" type="test_actuator.py" output="screen" respawn="true" >
+ <node name="actuator" pkg="pocketsphinx" type="test_actuator.py" output="screen" respawn="false" >
  </node>
 </launch>
